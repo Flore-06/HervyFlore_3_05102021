@@ -1,0 +1,283 @@
+@font-face 
+{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+}
+
+/* Propriétés des textes */
+
+p, li
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1, h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin: 0;
+}
+
+
+
+
+body
+{
+    font-size: 1em;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header #logo img {
+    width: 10em;
+    padding: 1em 0 .7em 0;
+}
+
+#header-right {
+    display: none;
+}
+
+#header-right li {
+    display: inline-flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0 1em 0 1em;
+}
+
+/* Header */
+
+.grey {
+    background-color: #f2f2f2;
+}
+
+.selec-ville {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selec-ville__form {
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6e6;
+    box-shadow: inset 0 7px 5px -7px rgba(100, 100, 100, 0.5);
+    padding: 1em 0 1em 0;
+}
+
+.selec-ville__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 2em 2.5em 2em;
+}
+
+.selec-ville__description p {
+    color: #2e2e2e;
+    padding-top: 1em;
+}
+
+.fa-map-marker-alt {
+    margin-right: 1em;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    border: none;
+    padding: 1em 2em;
+    margin: 2em 0 1em 0;
+    text-align: center;
+    background-size: 200% auto;
+    font-family: 'Roboto';
+    color: white;            
+    box-shadow: 0 3px 7px 0 rgba(100, 100, 100, 0.5);
+    border-radius: 5em;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+button, input[type="search"] {
+    border: none;
+    background: none;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.fonctionnement {
+    padding: 2.5em 2em 3em 2em;
+}
+
+.fonctionnement__etape {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.numero-cercle {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    padding: .3em;
+
+    background: #9356DC;
+    color: #fff;
+    text-align: center;
+    font-size: .8em;
+    font-family: 'Roboto';
+    z-index: 2;
+}
+
+.consigne {
+    margin-left: -.7em;
+    padding: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    box-shadow: 0 3px 10px 0 rgb(100 100 100 / 25%);
+    z-index: 1;
+}
+
+.consigne i {
+    color: #505050;
+    padding: 0 1em 0 .5em;
+}
+
+.consigne p {
+    font-weight: 900;
+}
+
+.restaurants {
+    padding: 2.5em 2em 3em 2em;
+}
+
+.restaurants__block {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    box-shadow: 0 3px 10px 0 rgb(100 100 100 / 25%);
+}
+
+.restaurants img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.restaurants .description {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__like i:focus{
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+footer {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+footer #logo img {
+    filter:  brightness(0) invert(1);
+    width: 35%;
+    margin-bottom: .5em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    text-decoration: none;
+    padding-top: .6em;
+    padding-left: 0;
+}
+
+footer i {
+    width: 1em;
+    padding-right: 1em;
+}
+
+
+
+
+
+/* Disposition sur tablette */
+
+/*
+@media all and (min-width: 651px)
+{
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Disposition desktop */
+
+/*
+@media all and (min-width: 1025px)
+  
+{
+
+}
+*/

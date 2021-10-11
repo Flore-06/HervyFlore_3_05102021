@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/34c0e145c2.js" crossorigin="anonymous"></script>
+        <title>ohmyfood</title>
+        <meta name="description" content="blabla" />
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="blabla">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="ohmyfood - "/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://www.ohmyfood.com/"/>
+        <meta property="og:image" content="http://example.com/image.jpg"/>
+        <meta property="og:description" content="blabla"/>
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff"> 
+    
+    </head>
+
+    <!--Contenu-->
+    
+    <body>
+        <header id="header">
+            <div id="logo">
+                <img src="images/logo/ohmyfood.png" title="Logo ohmyfood" alt="logo ohmyfood" />
+            </div>
+            <div id="header-right">
+              <nav id="menu">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#proposer-restaurant">Proposer un restaurant</a></li>
+                    <li><a href="#devenir-partenaire">Devenir partenaire</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+
+        
+        <section class="selec-ville grey">
+
+            <form class="selec-ville__form">
+                <div id="marker"><i class="fas fa-map-marker-alt"></i></div>
+                <input type="search" value="Paris, Belleville"/>
+                <!--<input type="submit" value="Rechercher"/>-->
+            </form>
+
+            <div class="selec-ville__description">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+
+                <button class="btn btn-grad" type="button">Explorer nos restaurants</button>
+            </div>
+
+        </section>
+                
+
+        <section class="fonctionnement">
+                
+            <h2>Fonctionnement</h2>
+
+            <div class="fonctionnement__etape">
+                <div class="numero-cercle">1</div>
+                <div class="consigne grey">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </div>
+
+            <div class="fonctionnement__etape">
+                <div class="numero-cercle">2</div>
+                <div class="consigne grey">
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </div>
+            </div>
+
+            <div class="fonctionnement__etape">
+                <div class="numero-cercle">3</div>
+                <div class="consigne grey">
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+        
+        </section>
+
+
+        <section class="restaurants grey">
+                
+            <h2>Restaurants</h2>
+
+            <div class="restaurants__cards">
+                <div class="restaurants__block">
+                    <img src="images/restaurants/la-palette-du-gout.jpg" alt="La Palette du goût">
+                    <div class="description">
+                        <div class="description__texte">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="description__like"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+
+                <div class="restaurants__block">
+                    <img src="images/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
+                    <div class="description">
+                        <div class="description__texte">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="description__like"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+
+                <div class="restaurants__block">
+                    <img src="images/restaurants/a-la-francaise.jpg" alt="A la française">
+                    <div class="description">
+                        <div class="description__texte">
+                            <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="description__like"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+
+                <div class="restaurants__block">
+                    <img src="images/restaurants/les-delices-des-sens.jpg" alt="Le délice des sens">
+                    <div class="description">
+                        <div class="description__texte">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="description__like"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        
+
+        <!--Pied de page-->
+        <footer>
+            <div id="footer">
+                <div class="a-propos">
+                    <div id="logo">
+                        <img src="images/logo/ohmyfood.png" title="Logo ohmyfood" alt="logo ohmyfood" />
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-utensils"></i><a href="#proposer-restaurant">Proposer un restaurant</a></li>
+                        <li><i class="fas fa-hands-helping"></i><a href="#devenir-partenaire">Devenir partenaire</a></li>
+                        <li>Mentions Légales</li>
+                        <li>Contact</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </body>
+
+</html>
