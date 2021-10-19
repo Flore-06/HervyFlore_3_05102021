@@ -153,6 +153,16 @@ body
     margin-top: 1em;
 }
 
+.plat__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.plat strong {
+    margin-left: 1em;
+}
+
 .btn-grad {
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     border: none;
