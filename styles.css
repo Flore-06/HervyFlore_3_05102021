@@ -43,9 +43,9 @@ a {
 
 
 
-@media all and (max-width: 576px)
+/*@media all and (max-width: 576px)
 {
-
+*/
 body
 {
     font-size: 1em;
@@ -62,11 +62,11 @@ body
     padding: 1em 0 .7em 0;
 }
 
-.header .nav {
+.header__nav {
     display: none;
 }
 
-.header .nav__link {
+.header_nav__link {
     display: inline-flex;
 }
 
@@ -120,6 +120,27 @@ body
     border-radius: 5em;
     margin-left : auto;
     margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-grad:hover {
+    /*.btn-grad__bg {
+        opacity: 1;
+    }*/
+}
+
+.btn-grad__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: lighten linear-gradient(to top, #9356DC, #FF79DA, 5);
+    box-shadow: 0 3px 7px 0 rgba(100, 100, 100, 0.7);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
 }
 
 button, input[type="search"] {
@@ -187,6 +208,10 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: column;
     border-radius: 1em;
     box-shadow: 0 3px 10px 0 rgb(100 100 100 / 25%);
+}
+
+.restaurants-prev a:visited {
+    color: black;
 }
 
 .restaurants img {
