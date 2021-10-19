@@ -5,6 +5,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 }
 
+
 /* Propriétés des textes */
 
 p, li
@@ -14,23 +15,36 @@ p, li
     margin: 0;
 }
 
-h1, h2
-{
+h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 1.5em;
     margin: 0;
+}
+
+h1, h2 {
+    font-size: 1.5em;
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
     font-size: 1em;
-    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+li {
+    padding: 0 1em 0 1em;
+}
+
+a {
+    text-decoration: none;
 }
 
 
 
+@media all and (max-width: 576px)
+{
 
 body
 {
@@ -38,35 +52,28 @@ body
     margin: 0;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-around;
 }
 
-header #logo img {
+.header__heading img {
     width: 10em;
     padding: 1em 0 .7em 0;
 }
 
-#header-right {
+.header .nav {
     display: none;
 }
 
-#header-right li {
+.header .nav__link {
     display: inline-flex;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    padding: 0 1em 0 1em;
-}
 
 /* Header */
 
-.grey {
+.section--grey {
     background-color: #f2f2f2;
 }
 
@@ -129,7 +136,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.fonctionnement {
+.section {
     padding: 2.5em 2em 3em 2em;
 }
 
@@ -174,11 +181,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: 900;
 }
 
-.restaurants {
-    padding: 2.5em 2em 3em 2em;
-}
-
-.restaurants__block {
+.restaurants-prev {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
@@ -211,31 +214,33 @@ footer {
     color: white;
 }
 
-footer #logo img {
+.footer__logo img {
     filter:  brightness(0) invert(1);
-    width: 35%;
+    width: 100px;
     margin-bottom: .5em;
 }
 
-footer ul {
+.footer .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-footer li {
-    list-style: none;
-    text-decoration: none;
+.footer .nav__link {
     padding-top: .6em;
     padding-left: 0;
 }
 
-footer i {
+.footer a {
+    color: white;
+}
+
+.footer i {
     width: 1em;
     padding-right: 1em;
 }
 
-
+}
 
 
 

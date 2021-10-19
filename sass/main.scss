@@ -1,0 +1,77 @@
+@font-face 
+{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+}
+
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+
+body
+{
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Header */
+
+section .grey {
+    background-color: #f2f2f2;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to top, $primaire, $secondaire);
+    border: none;
+    margin: 10px;
+    padding: 1em 2em;
+    text-align: center;
+    background-size: 200% auto;
+    /*font-family: 'Roboto';*/
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5em;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* Disposition sur tablette */
+
+@media all and (max-width: 1024px)
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Disposition sur téléphone */
+
+@media all and (max-width: 630px)
+  
+{
+
+}

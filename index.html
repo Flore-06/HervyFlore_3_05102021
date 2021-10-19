@@ -45,24 +45,27 @@
     <!--Contenu-->
     
     <body>
-        <header id="header">
-            <div id="logo">
+        <header class="header">
+
+            <div class="header__heading">
                 <img src="images/logo/ohmyfood.png" title="Logo ohmyfood" alt="logo ohmyfood" />
             </div>
-            <div id="header-right">
-              <nav id="menu">
+
+            
+            <nav class="nav">
                 <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#proposer-restaurant">Proposer un restaurant</a></li>
-                    <li><a href="#devenir-partenaire">Devenir partenaire</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav__link"><a href="#accueil">Accueil</a></li>
+                    <li class="nav__link">Proposer un restaurant</li>
+                    <li class="nav__link">Devenir partenaire</li>
+                    <li class="nav__link"><a href="mailto:contact@ohmyfood.com?subject=AIDE">Contact</a></li>
                 </ul>
-              </nav>
-            </div>
+            </nav>
+           
+
         </header>
 
         
-        <section class="selec-ville grey">
+        <section class="selec-ville section--grey">
 
             <form class="selec-ville__form">
                 <div id="marker"><i class="fas fa-map-marker-alt"></i></div>
@@ -74,15 +77,15 @@
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-                <button class="btn btn-grad" type="button">Explorer nos restaurants</button>
+                <button class="btn btn-grad" type="button" onclick="document.getElementById('restaurants').scrollIntoView();">Explorer nos restaurants</button>
             </div>
 
         </section>
                 
 
-        <section class="fonctionnement">
+        <section class="fonctionnement section">
                 
-            <h2>Fonctionnement</h2>
+            <h2 class="section__heading">Fonctionnement</h2>
 
             <div class="fonctionnement__etape">
                 <div class="numero-cercle">1</div>
@@ -111,12 +114,14 @@
         </section>
 
 
-        <section class="restaurants grey">
+        <section id="restaurants" class="restaurants section section--grey">
                 
-            <h2>Restaurants</h2>
+            <h2 class="section__heading">Restaurants</h2>
 
-            <div class="restaurants__cards">
-                <div class="restaurants__block">
+            <div class="grid">
+                <div class="restaurants-prev">
+                    <a href="pages/palette-du-gout.html">
+
                     <img src="images/restaurants/la-palette-du-gout.jpg" alt="La Palette du goût">
                     <div class="description">
                         <div class="description__texte">
@@ -125,9 +130,11 @@
                         </div>
                         <div class="description__like"><i class="far fa-heart"></i></div>
                     </div>
+                    
+                    </a>
                 </div>
 
-                <div class="restaurants__block">
+                <div class="restaurants-prev">
                     <img src="images/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
                     <div class="description">
                         <div class="description__texte">
@@ -138,7 +145,7 @@
                     </div>
                 </div>
 
-                <div class="restaurants__block">
+                <div class="restaurants-prev">
                     <img src="images/restaurants/a-la-francaise.jpg" alt="A la française">
                     <div class="description">
                         <div class="description__texte">
@@ -149,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="restaurants__block">
+                <div class="restaurants-prev">
                     <img src="images/restaurants/les-delices-des-sens.jpg" alt="Le délice des sens">
                     <div class="description">
                         <div class="description__texte">
@@ -167,19 +174,20 @@
 
         <!--Pied de page-->
         <footer>
-            <div id="footer">
-                <div class="a-propos">
-                    <div id="logo">
+            <div class="footer">
+            
+                    <div class="footer__logo">
                         <img src="images/logo/ohmyfood.png" title="Logo ohmyfood" alt="logo ohmyfood" />
                     </div>
-                    <ul>
-                        <li><i class="fas fa-utensils"></i><a href="#proposer-restaurant">Proposer un restaurant</a></li>
-                        <li><i class="fas fa-hands-helping"></i><a href="#devenir-partenaire">Devenir partenaire</a></li>
-                        <li>Mentions Légales</li>
-                        <li>Contact</li>
+
+                    <ul class="footer nav">
+                        <li class="nav__link"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                        <li class="nav__link"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                        <li class="nav__link">Mentions Légales</li>
+                        <li class="nav__link"><a href="mailto:contact@ohmyfood.com?subject=AIDE">Contact</a></li>
                     </ul>
 
-                </div>
+            
             </div>
 
         </footer>

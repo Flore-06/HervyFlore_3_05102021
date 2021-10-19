@@ -1,0 +1,253 @@
+@font-face 
+{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+}
+
+
+/* Propriétés des textes */
+
+p, li
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin: 0;
+}
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.3em;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    margin-top: 1.3em;
+    width: 2.5em;
+    height: .15em;
+    background: #99E2D0;
+  }
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+li {
+    padding: 0 1em 0 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media all and (max-width: 576px)
+{
+
+body
+{
+    font-size: 1em;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__heading .back{
+    position: absolute;
+    top: 1.3em; left: 2em; right: 0; bottom: 0;
+}
+
+.header__heading img {
+    width: 10em;
+    padding: 1em 0 .7em 0;
+}
+
+.header .nav {
+    display: none;
+}
+
+.header .nav__link {
+    display: inline-flex;
+}
+
+
+/* Header */
+
+.section {
+    padding: 2.5em 1em 3em 1em;
+}
+
+.photo-restaurant img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+
+.section--grey {
+    background-color: #f2f2f2;
+    border-radius: 3em 3em 0 0;
+    margin-top: -3em;
+    z-index: 10;
+}
+
+.section__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__heading i {
+    font-size: 1.7em;
+    margin-top: .2em;
+}
+
+
+.menu__categorie {
+    margin-top: 2em;
+}
+
+.plat {
+    padding: 1em;
+    background: white;
+    border-radius: 1em;
+    box-shadow: 0 2px 10px 0 rgb(100 100 100 / 15%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    border: none;
+    padding: 1em 2em;
+    margin: 3em 0 1em 0;
+    text-align: center;
+    background-size: 200% auto;
+    font-family: 'Roboto';
+    color: white;            
+    box-shadow: 0 3px 7px 0 rgba(100, 100, 100, 0.5);
+    border-radius: 5em;
+    margin-left : auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input[type="search"] {
+    border: none;
+    background: none;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+
+
+
+footer {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.footer__logo img {
+    filter:  brightness(0) invert(1);
+    width: 100px;
+    margin-bottom: .5em;
+}
+
+.footer .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .nav__link {
+    padding-top: .6em;
+    padding-left: 0;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer i {
+    width: 1em;
+    padding-right: 1em;
+}
+
+}
+
+
+
+/* Disposition sur tablette */
+
+/*
+@media all and (min-width: 651px)
+{
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Disposition desktop */
+
+/*
+@media all and (min-width: 1025px)
+  
+{
+
+}
+*/
