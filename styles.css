@@ -229,8 +229,20 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: space-between;
 }
 
-.description__like i:focus{
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+.description__like .fa-gradient{
+    font-size: 1.3em;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+}
+
+.description__like .fa-gradient:hover, .fa-gradient:active{
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 0;
 }
 
 footer {
@@ -265,49 +277,64 @@ footer {
     padding-right: 1em;
 }
 
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px)
+{
+    .footer__logo{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1em;
+    }
+
+    .footer .nav{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 
 
-/* Disposition sur tablette */
 
-/*
-@media all and (min-width: 651px)
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 913px)
 {
 
-header
-{
-    display: flex;
-    justify-content: space-between;
-}
+    .fonctionnement__liste{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fonctionnement__etape{
+        width: 32%;
+    }
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .restaurants-prev{
+        width: 49%;
+        margin-top: 1.4em;
+    }
 
 }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Disposition desktop */
-
-/*
-@media all and (min-width: 1025px)
-  
-{
-
-}
-*/
