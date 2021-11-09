@@ -202,6 +202,14 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: 900;
 }
 
+.consigne:hover {
+    background-color: rgba(147, 86, 220, .2) ;
+}
+
+.consigne:hover> .consigne i {
+    color: rgb(147, 86, 220);
+}
+
 .restaurants-prev {
     margin-top: 1em;
     display: flex;
@@ -219,6 +227,18 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
+}
+
+.restaurants strong{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color:white;
+    background-color: #99E2D0;
+    padding:.5em;
+    border-radius: .2em;
+    margin: 1em;
+    position: absolute;
 }
 
 .restaurants .description {
