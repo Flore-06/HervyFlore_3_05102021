@@ -168,6 +168,37 @@ body
     width: 100%;
 }
 
+.plat-a, .plat-b, .plat-c, .plat-d, .plat-e, .plat-f, .plat-g, .plat-h, .plat-i, .plat-j {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.plat-a {animation-delay: 0ms;}
+.plat-b {animation-delay: 100ms;}
+.plat-c {animation-delay: 200ms;}
+.plat-d {animation-delay: 300ms;}
+.plat-e {animation-delay: 400ms;}
+.plat-f {animation-delay: 500ms;}
+.plat-g {animation-delay: 600ms;}
+.plat-h {animation-delay: 700ms;}
+.plat-i {animation-delay: 800ms;}
+.plat-j {animation-delay: 900ms;}
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+ }
+}
+
 .plat__info {
     display: flex;
     justify-content: space-between;
