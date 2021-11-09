@@ -266,10 +266,53 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 1em;
     box-shadow: 0 3px 10px 0 rgb(100 100 100 / 25%);
     position: relative;
+    transition: transform .2s;
+}
+
+.restaurants-prev:hover {
+    transform: scale(1.2)
 }
 
 .restaurants-prev a:visited {
     color: black;
+}
+
+.palette-du-gout, .note-enchantee, .a-la-francaise, .le-delice-des-sens {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.palette-du-gout {
+    animation-delay: 0ms;
+}
+
+.note-enchantee {
+    animation-delay: 150ms;
+    opacity: 0;
+}
+
+.a-la-francaise {
+    animation-delay: 300ms;
+    opacity: 0;
+}
+
+.le-delice-des-sens {
+    animation-delay: 450ms;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+ }
 }
 
 .restaurants img {
@@ -328,7 +371,7 @@ input[type="search"]::-webkit-search-results-decoration {
     right: -.3rem;
     transform:translateX(-50%);
     border-radius:30%;
-    animation:fill 1s ease-in-out infinite;
+    animation:fill 1s ease-in-out /*infinite*/;
     /*z-index:-1;*/
   }
   @keyframes fill {
