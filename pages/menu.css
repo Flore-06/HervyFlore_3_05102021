@@ -49,6 +49,7 @@ h3 {
 
 strong {
     font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -161,7 +162,6 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*align-items: flex-end;*/
     margin-top: 1em;
     cursor: pointer;
     overflow: hidden;
@@ -170,22 +170,29 @@ body
 
 .plat__info {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    margin: 1em 0 1em 1em;
+}
+
+.plat h3{
+    margin: 1rem 3.5rem 0 1rem;
 }
 
 .plat__description {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 1rem 1rem;
+}
 
+.plat h3, .plat__description p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .plat strong {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1rem;
 }
 
 .plat:hover> .plat__animation{
@@ -199,7 +206,7 @@ body
 }
 
 .plat:hover> .plat__info{
-    width: 75%;
+    width: 77%;
     /*-webkit-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;*/
     transition: all .5s ease-in;
