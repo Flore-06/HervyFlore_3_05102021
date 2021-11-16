@@ -155,7 +155,6 @@ body
 }
 
 .plat {
-    /*padding: 1em;*/
     background: white;
     border-radius: 1em;
     box-shadow: 0 2px 10px 0 rgb(100 100 100 / 15%);
@@ -228,23 +227,20 @@ body
 
 .plat:hover> .plat__animation{
     visibility: visible;
-    /*-webkit-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;*/
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
-    /*-webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);*/
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
 .plat:hover> .plat__info{
     width: 77%;
-    /*-webkit-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;*/
     transition: all .5s ease-in;
 }
 
 .plat__animation {
-    /*position: absolute;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,18 +249,6 @@ body
     font-size: 1.7em;
     width: 23%;
     margin-right: -23%;
-    /*height: 100%;*/
-    /*top: 0;*/
-    /*transform-origin: right;*/
-    /*display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-transform-origin: right;
-    -ms-transform-origin: right;*/
-    /*left: 100%;*/
     visibility: hidden;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
@@ -303,6 +287,13 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn-grad:hover{
+    background: linear-gradient(rgba(255,121,218, 0.9), rgba(147,86,220, 0.9) );
+    box-shadow: 0 3px 7px 0 rgba(100, 100, 100, 0.7);
 }
 
 button, input[type="search"] {
