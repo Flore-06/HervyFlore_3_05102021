@@ -26,7 +26,6 @@ background-color: white;
     }
     100% {
       opacity: 0;
-      /*left: -9999px;*/
     }
   }
   @keyframes seconds {
@@ -35,7 +34,6 @@ background-color: white;
     }
     100% {
       opacity: 0;
-      /*left: -9999px;*/
     }
   }
 
@@ -45,13 +43,12 @@ background-color: white;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear /*infinite*/;
-    animation: spin 2s linear /*infinite*/;
+    -webkit-animation: spin 2s linear;
+    animation: spin 2s linear;
     animation-fill-mode: forwards;
     position: absolute;
     margin: auto;
     top:0; left: 0; right: 0; bottom: 0;
-    /*z-index: 100;*/
   }
   
   @keyframes spin {
@@ -81,7 +78,6 @@ background-color: white;
     }
     100% {
       opacity: 1;
-      /*left: -9999px;*/
     }
   }
   @keyframes introduction {
@@ -90,7 +86,6 @@ background-color: white;
     }
     100% {
       opacity: 1;
-      /*left: -9999px;*/
     }
   }
 
@@ -140,9 +135,7 @@ a {
 
 
 
-/*@media all and (max-width: 576px)
-{
-*/
+
 body
 {
     font-size: 1em;
