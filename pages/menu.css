@@ -200,32 +200,32 @@ body
 .plat__info {
     display: flex;
     width: 100%;
+    padding: 1rem;
 }
 
 
-.plat__description_2 {
-    width: 82%;
-    padding: 4%;
+.plat__description {
+    width: 85%;
 }
 
-.plat h3, .plat__description p {
-    text-overflow: ellipsis;
+.plat h3, .plat p {
     white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .plat__prix {
-    width: 10%;
-    padding: 4% 4% 4% 0;
+    width: 15%;
     display: flex;
     justify-content: flex-end;
     align-items: end;
+    margin-left: 1rem;
 }
 
 
 
-.plat:hover> .plat__description_2{
-    width: 31%;
+.plat:hover> .plat__info{
+    width: 73%;
     transition: all .5s ease-in;
 }
 
