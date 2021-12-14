@@ -201,11 +201,12 @@ body
     display: flex;
     width: 100%;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 
 .plat__description {
-    width: 85%;
+    width: 75%;
 }
 
 .plat h3, .plat p {
@@ -219,7 +220,6 @@ body
     display: flex;
     justify-content: flex-end;
     align-items: end;
-    margin-left: 1rem;
 }
 
 
