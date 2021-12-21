@@ -26,6 +26,7 @@ background-color: white;
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes seconds {
@@ -34,6 +35,7 @@ background-color: white;
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
 
@@ -372,6 +374,7 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 0 0 1em 1em;
     display: flex;
     justify-content: space-between;
+    margin-top: -4px;
 }
 
 .description__like .fa-heart{
